@@ -1,19 +1,17 @@
-# Scalix Cloud CLI — distribution
+# Scalix Cloud CLI — binary distribution
 
-Public distribution of the **`scalix-cloud`** CLI (compiled binaries only; the
-source lives in Scalix's private platform monorepo).
-
-## Install
+This repo hosts the **prebuilt binaries** the `scalix-cloud` npm package downloads at install time. There is nothing to do here as a user — install the CLI the normal way:
 
 ```bash
 npm install -g scalix-cloud
-scalix-cloud login <scalix_sk_…>   # key from https://console.scalix.world/org/keys
-scalix-cloud --help
+scalix-cloud login        # API key from https://console.scalix.world
 ```
 
-The npm package is a thin launcher that downloads the native binary for your
-platform from this repo's releases (checksum-verified). Direct downloads:
-`https://github.com/scalixworld/scalix-cli/releases`.
+- **Docs**: https://docs.scalix.world/cli
+- **Release notes**: the [Releases](https://github.com/scalixworld/scalix-cloud-cli/releases) tab
+- **Platforms**: Linux (x86_64, aarch64) · macOS (Apple Silicon) · Windows (x86_64)
+- Every binary ships with a `.sha256` checksum, verified automatically by the npm installer.
 
-Platforms: Linux (x86_64, aarch64), macOS (Apple Silicon), Windows (x86_64).
-Docs: https://docs.scalix.world · Made by [Scalix World](https://scalix.world).
+Source code lives in the private Scalix Cloud platform monorepo. The SDKs are separate packages: [`@scalix-world/sdk`](https://www.npmjs.com/package/@scalix-world/sdk) (npm) and [`scalix-sdk`](https://pypi.org/project/scalix-sdk/) (PyPI).
+
+© Scalix World Pvt Ltd · https://scalix.world
