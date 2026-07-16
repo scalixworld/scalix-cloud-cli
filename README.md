@@ -3,7 +3,11 @@
 This repo hosts the **prebuilt binaries** the `scalix-cloud` npm package downloads at install time. There is nothing to do here as a user — install the CLI the normal way:
 
 ```bash
-npm install -g scalix-cloud
+npm install -g scalix-cloud                   # npm
+brew install scalixworld/tap/scalix-cloud     # Homebrew (macOS/Linux)
+scoop bucket add scalix https://github.com/scalixworld/scoop-bucket
+scoop install scalix/scalix-cloud             # Scoop (Windows)
+
 scalix-cloud login        # API key from https://console.scalix.world
 ```
 
